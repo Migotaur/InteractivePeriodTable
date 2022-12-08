@@ -11,4 +11,9 @@ class ElementObj(atomicNumber:Int, name:String, symbol:String, atomicMass:Double
     var groupNumber: Int = groupNumber
     var yearDiscovered:Int = yearDiscovered
     var discoveredBy:String = discoverer
+    var description:String = ""
+
+    fun addDescription(desc:String){
+        this.description = this.name + " was invented in " + this.yearDiscovered + " by " + this.discoveredBy + ". " + desc
+    }
 }

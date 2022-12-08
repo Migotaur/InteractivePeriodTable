@@ -1,6 +1,39 @@
 package com.example.interactivePT.PresetInformation
 
 class PresetInformation {
+    fun getCompounds(): Map<Int, CompoundObj>{
+        val gems:MutableMap<Int, CompoundObj> = HashMap<Int,CompoundObj>()
+
+        gems[1] = CompoundObj("Water", "1 8", "H\u2082O")
+        gems[2] = CompoundObj("Salt", "11 17", "NaCl")
+        gems[3] = CompoundObj("Caffeine", "6 1 8 7", "C\u2088H\u2081\u2080N\u2084O\u2082")
+        gems[4] = CompoundObj("FoolsGold", "26 16", "FeS\u2082")
+        gems[5] = CompoundObj("Glue", "6 1 7 8", "C\u2085H\u2085NO\u2082")
+        gems[6] = CompoundObj("Sugar", "6 1 8", "C\u2081\u2082H\u2082\u2082O\u2081\u2081")
+        gems[7] = CompoundObj("Ibuprofen", "6 1 8", "C\u2081\u2083H\u2081\u2088O\u2082")
+        gems[8] = CompoundObj("Methane", "6 1", "CH\u2084")
+        gems[9] = CompoundObj("Penicillin", "6 1 7 8 16", "C\u2081\u2086H\u2081\u2088N\u2082OS\u2085")
+        gems[10] = CompoundObj("Ozone", "8", "O\u2083")
+        return gems
+    }
+
+    fun getGems(): Map<Int, GemObj>{
+        val gems:MutableMap<Int, GemObj> = HashMap<Int,GemObj>()
+
+        gems[1] = GemObj("Diamond", "6", "C")
+        gems[2] = GemObj("Emerald", "4 13 14 8", "Be\u2083Al\u2082Si\u2086O\u2081\u2088")
+        gems[3] = GemObj("Ruby", "13 8", "Al\u2082O\u2083")
+        gems[4] = GemObj("Sapphire", "13 8", "Al\u2082O\u2083")
+        gems[5] = GemObj("Zircon", "40 14 8", "ZrSiO\u2084")
+        gems[6] = GemObj("Jade", "11 13 14 8", "NaAlSi\u2082O\u2086")
+        gems[7] = GemObj("Pearl", "20 6 8", "CaCO\u2083")
+        gems[8] = GemObj("Topaz", "13 14 8 1 9", "Al\u2082SiO\u2084(FOH)\u2082")
+        gems[9] = GemObj("Lapis", "11 20 13 14 8 16", "(NaCa)\u2088Al\u2086Si\u2086O\u2082\u2084(SO)\u2084")
+        gems[10] = GemObj("Amethyst", "14 8", "SiO\u2082")
+
+        return gems
+    }
+
     fun getElements(): Map<Int, ElementObj>{
         val elements:MutableMap<Int, ElementObj> = HashMap<Int, ElementObj>()
         elements[1] = ElementObj(
@@ -17,15 +50,15 @@ class PresetInformation {
         )
         elements[2] = ElementObj(
             2,
-            "Hydrogen",
-            "H",
-            1.0078,
-            -259.16,
-            -252.87,
+            "Helium",
+            "He",
+            4.0026,
+            -272.2,
+            -268.93,
             1,
             1,
-            1766,
-            "Henry Cavendish"
+            1868,
+            "William Ramsay"
         )
         elements[3] = ElementObj(
             3,
@@ -569,15 +602,15 @@ class PresetInformation {
         )
         elements[48] = ElementObj(
             48,
-            "Hydrogen",
-            "H",
-            1.0078,
-            -259.16,
-            -252.87,
+            "Cadmium",
+            "Cd",
+            112.41,
+            321.11,
+            766.86,
             1,
             1,
-            1766,
-            "Henry Cavendish"
+            1817,
+            "Friedrich Stromeyer"
         )
         elements[49] = ElementObj(
             49,
@@ -941,15 +974,15 @@ class PresetInformation {
         )
         elements[79] = ElementObj(
             79,
-            "Hydrogen",
-            "H",
-            1.0078,
-            -259.16,
-            -252.87,
+            "Gold",
+            "Au",
+            196.97,
+            1064.18,
+            2700.0,
             1,
             1,
-            1766,
-            "Henry Cavendish"
+            -2050,
+            "Zosimos (Ancient Egypt)"
         )
         elements[80] = ElementObj(
             80,
@@ -1409,16 +1442,21 @@ class PresetInformation {
         )
         elements[118] = ElementObj(
             118,
-            "Hydrogen",
-            "H",
-            1.0078,
-            -259.16,
-            -252.87,
+            "Oganesson",
+            "Og",
+            294.0,
+            177.0,
+            57.0,
             1,
             1,
-            1766,
-            "Henry Cavendish"
+            2002,
+            "Yuri Oganessian"
         )
+
+        elements[1]?.addDescription("As the first element in the Periodic Table, Hydrogen has the lowest number of protons at just 1. Hydrogen is also the lightest element and the most abundant in the universe!")
+        elements[2]?.addDescription("With an atomic number of 2, Helium has 2 protons. Helium is the first of what is known as a Noble Gas. In this case, this means that Helium is very stable and it is very hard to have it react with another substance. A silly usage of Helium is to suck the air and make your voice sound like a chipmunk!")
+        elements[48]?.addDescription("Cadmium has an atomic number of 48, meaning it contains 48 protons. The most common usage of Cadmium in the industrial world is for energy. Many batteries, alloys, solar cells, and even nuclear reactors use Cadmium regulary. This is because Cadmium acts great at absorbing neutrons.")
+        elements[118]?.addDescription("This is the last known element of the Periodic Table being found in 2002. It is also the only element where its namesake is still alive (that being its founder Yuri). Oganesson is also a Noble Gas, meaning that it is the first synthetic element that is also known to have quite stable properties. It was given it's name in 2016!")
         return elements
     }
 }
