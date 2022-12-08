@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:translationX="-10px"
+    tools:context=".ElementsActivity.ElementFocusActivity">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="228dp"
+        android:text="Back"
+        android:translationX="105px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_symbol"
+        android:layout_width="210dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Xx"
+        android:textSize="96sp"
+        android:translationX="105px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_symbol2"
+        android:layout_width="228dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#A6F3F13C"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal|top"
+        android:text="Properties"
+        android:textSize="24sp"
+        android:translationX="-10px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_symbol4"
+        android:layout_width="291dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="440dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#A63CF3E4"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal|top"
+        android:text="About"
+        android:textSize="24sp"
+        android:translationX="220px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_points"
+        android:layout_width="213dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#00F3F13C"
+        android:fontFamily="sans-serif-medium"
+        android:text="Melting Point: \n\n Boiling Point:"
+        android:textSize="16sp"
+        android:translationX="-10px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_info"
+        android:layout_width="265dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="444dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#00F3F13C"
+        android:fontFamily="sans-serif-medium"
+        android:text="Discovered In: \n\n By"
+        android:textSize="16sp"
+        android:translationX="220px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_name"
+        android:layout_width="222dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="144dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Xelementium"
+        android:textSize="24sp"
+        android:translationX="105px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_atomMass"
+        android:layout_width="222dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="176dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="420.6900"
+        android:textSize="20sp"
+        android:translationX="105px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/element_atomicnumber"
+        android:layout_width="47dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="120"
+        android:textSize="20sp"
+        android:translationX="105px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
